@@ -1,0 +1,11 @@
+class Solution:
+    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
+        x=len(matrix)
+        y=len(matrix[0])
+        temp_matrix=[[0 for i in range(x)]for j in range(y)]
+        
+        for i in range (x):
+            for j in range (y):
+                temp_matrix[j][i]=matrix[i][j]
+        return temp_matrix
+    
