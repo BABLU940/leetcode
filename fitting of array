@@ -1,0 +1,28 @@
+#method 1:
+
+arr.sort()
+
+        brr.sort()
+
+        for i in range(n):
+
+            if(arr[i] > brr[i]):
+
+                return False
+
+        return True
+        
+        
+        
+    # method 2:
+    
+    arr = sorted(arr)
+        brr = sorted(brr)
+        res = 0
+        for i in range(n):
+            if arr[i] <= brr[i]:
+                res += 1
+            if res == n:
+                return True
+            else:
+                return False
